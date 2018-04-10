@@ -1,0 +1,72 @@
+*{margin:0;padding: 0}
+body,input{ font-size: 14px;
+    line-height: 1.5;
+    font-family:'맑은 고딕','Malgun Gothic','돋움','dotum','Apple SD Gothic Neo','sans-serif'; }
+#container,footer {
+    margin: 0 auto;width: 1000px
+}
+li{list-style: none}
+a{text-decoration: none;color: #1c1c1c;}
+#wrap,header {  width: 100%  }
+#gnb>li{ float: left;width: 150px }
+#gnb{overflow: hidden}
+.mainbg{
+    width:1000px;
+    margin:0 auto;}
+div { }
+div { }
+#wrap {
+    width:1000px;margin: 0 auto;  position: relative;}
+nav{overflow: hidden;width:1000px;margin: 0 auto}
+.submenu{display: none;background:#3498db;
+    position: absolute;}
+#gnb>li:hover{background: #5cb85c}
+#gnb>li:hover{color: #fff}
+.submenu>li>a:hover{color: #fff;}
+#logo{color: #fff;width: 300px;float: left}
+.wrap{margin: 0 auto;  width:1000px; overflow: hidden;
+}
+.git_Label{ width:100px;}
+.item_info{overflow: hidden}
+.item_info dt{float:left;  width:140px;
+    height:40px;line-height: 25px}
+.item_info dd{float:left;}
+#gitBody{
+    width:620px;}
+.btn_git{background: #4d87ef;color: #fff}
+.lnb{overflow: hidden;
+    float: right;}
+.lnb>li{float: left;line-height: 3}
+#logo{
+    width:300px;}
+
+/* 로그인 */
+#login{ width:500px;margin: 0 auto;display: none;position: absolute;left:200px;top:300px; background-color: #f3f3f3; height:300px; border-radius: 3%; border: 2px solid seagreen;}
+#login dt{color: #666; font-size:16px; width:100px; float: left; margin-bottom:40px; line-height: 40px;}
+#login dd{float: left; width:220px;}
+.pw{ clear: left;}
+#login input{width: 200px; height:40px; border: 1px solid #a0a0a0; background-color: #f4f4f4; padding-left: 15px;}
+#login form{text-align: center; margin-top:90px;  margin-left:15px;}
+#login #login_btn{background-color: #115fad; border-radius: 100%; width:90px; height:90px; color: #fff; border: none;    margin-top:10px; }
+.blind{overflow: hidden; position: absolute; top: 0; left: 0; width: 1px; height: 1px; font-size: 0; line-height: 0; white-space: nowrap;}
+#close{position: absolute;top:20px;right:15px;width:30px; height:30px; background: url(../img/close_btn.png) no-repeat; background-position:-470px 0;}
+.down>a{color: red;}
+
+/* 회원가입 */
+.join{width: 800px; height: 400px; }
+.join form{background-color: #f3f3f3; width: 500px; height: 300px; border:1px solid seagreen; margin: 0 auto; text-align: center;
+    margin-top:30px; border-radius: 3%;}
+.join form dl{width:342px; margin-left:10px; float: left;}
+.join .item_info dt{line-height: 40px; margin-top:10px; }
+.join input{width: 200px; height:40px; border: 1px solid #a0a0a0; background-color: #f4f4f4; margin-top:15px; text-align: center;}
+.join .btn_git{background-color: #115fad; border-radius: 100%; width:90px; height:90px; color: #fff; border: none; float: left; margin-left:35px; margin-top:-120px; }
+
+/* 게시판 */
+/*#070f409c*/
+#table_wrap{width:1000px; margin: 0 auto;}
+#table_wrap table{width:100%; text-align: center;border-spacing:0px;  }
+#table_wrap table tr:nth-child(1){ background-color:seagreen;color: #fff;}
+#table_wrap table tr{height:50px;}
+#table_wrap table td{border-bottom:1px solid #dddddd; line-height: 50px; }
+#w_btn{width:70px; height:30px;background-color: #fff; border:1px solid #2196f3;  border-radius: 2px; margin-left: 865px; margin-top:15px; line-height: 30px;}
+#w_btn a{color:#2196f3; text-align: center; display:block;}
