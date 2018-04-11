@@ -9,9 +9,9 @@ include_once "./db/db.php";
 session_start();
 $id=$_POST['id'];
 $password=$_POST['password'];
-$sql="select * from git WHERE id='$id' AND password='$password'";
-
+$sql="select * from git WHERE id='$id' AND password=:password";
 $stmt=$pdo->prepare($sql);
+$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 $stmt->execute();
 $result=$stmt->fetch(PDO::FETCH_ASSOC);
 print_r($result);
