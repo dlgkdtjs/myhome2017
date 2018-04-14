@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <header>
     <div class="wrap">
 
@@ -25,7 +22,7 @@ session_start();
     <nav>
         <ul id="gnb">
             <li>
-               포트폴리오
+                <a href="./portpolio.php">포트폴리오</a>
             </li>
             <li>자료실
                 <ul class="submenu">
