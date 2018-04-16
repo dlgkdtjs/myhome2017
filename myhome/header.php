@@ -24,6 +24,10 @@
         <ul id="gnb">
             <li>
                 <a href="./portpolio.php">포트폴리오</a>
+                <ul class="submenu">
+                    <li><a href="./portpolio.php?grade=18">2018입학생</a></li>
+                    <li><a href="./portpolio.php?grade=17">2017입학생</a></li>
+                </ul>
             </li>
             <li><a href="./board1.php">자료실</a>
             </li>
@@ -39,9 +43,20 @@
             <li>
                 게시판
                 <ul class="submenu">
-                    <li>
-                        <a href="./board.php">게시판</a>
-                    </li>
+                    <?php
+                    include_once "./db/db.php";
+                    $sql="select * from admin";
+                    $stmt=$pdo->prepare($sql);
+                    $stmt->execute();
+                    $rows1=$stmt->fetchAll();
+                    foreach ($rows1 as $result1) {
+                        ?>
+                        <li>
+                            <a href="./board.php?ok=<?=$result1["homework"]?>"><?=$result1["homework"]?></a>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
             </li>
         </ul>
