@@ -70,3 +70,5 @@ nav{overflow: hidden;width:1000px;margin: 0 auto}
 #table_wrap table td{border-bottom:1px solid #dddddd; line-height: 50px; }
 #w_btn{width:70px; height:30px;background-color: #fff; border:1px solid #2196f3;  border-radius: 2px; margin-left: 865px; margin-top:15px; line-height: 30px;}
 #w_btn a{color:#2196f3; text-align: center; display:block;}
+.p_page{width:300px;float:left;min-height: 300px}
+.pro{}

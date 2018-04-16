@@ -24,6 +24,7 @@ echo "<script> alert ('아이디와 비밀번호를 확인하세요');
                  location.href='./index.php'</script>";
 }else{
   $_SESSION['name']=$result['name'];
+    $_SESSION['id']=$result['id'];
     print_r($_SESSION);
 echo "<script>alert('로그인하였습니다.');location.href='./index.php'</script>";
 

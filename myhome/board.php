@@ -4,14 +4,16 @@
 session_start();
 if(isset($_SESSION['name'])) {
     include_once './db/db.php';
-    $sql = "select * from board";
+    $ok=$_GET['ok'];
+    $sql = "select * from board WHERE ok='$ok'";
+ //   echo $sql;
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $rows = $stmt->fetchAll();
     include_once "./head.php";
 }else{
     echo "<script>alert('권한이 없습니다.');</script>";
-    echo "<script>location.href='/';</script>";
+    echo "<script>history.back();</script>";
 }
 ?>
 <body>
@@ -43,7 +45,7 @@ if(isset($_SESSION['name'])) {
             }
             ?>
         </table>
-            <div id="w_btn"><a href="./bwrite.php">글쓰기</a></div>
+            <div id="w_btn"><a href="./bwrite.php?ok=<?=$ok?>">글쓰기</a></div>
         </div>
     </div>
 </div>

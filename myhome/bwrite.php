@@ -11,6 +11,7 @@ include_once "./head.php";
     ?>
     <div id="container">
 <form action="./binsert.php" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="ok" value="<?=$_GET['ok']?>">
     <dl>
         <dt><label for="title">제목</label></dt>
         <dd><input type="text" id="title" name="title"></dd>
