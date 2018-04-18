@@ -72,3 +72,9 @@ nav{overflow: hidden;width:1000px;margin: 0 auto}
 #w_btn a{color:#2196f3; text-align: center; display:block;}
 .p_page{width:300px;float:left;min-height: 300px}
 .pro{}
+img{vertical-align:bottom}
+.my{text-align: center}
+.p_page>li{
+    text-align: center;}
+.lng img{
+    width:60px;}
