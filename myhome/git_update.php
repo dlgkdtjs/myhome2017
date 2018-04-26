@@ -6,11 +6,12 @@
  * Time: 오전 7:50
  */
 include_once './db/db.php';
-$idx=$_POST['idx'];
+$id=$_POST['id'];
 $git_url=$_POST['git_url'];
 $password=$_POST['password'];
 $home=$_POST['home'];
-$sql="update git set git_url='$git_url', password='$password', home='$home', git_url='$git_url' WHERE idx='$idx'";
+$aname=$_POST['aname'];
+$sql="update git set aname='$aname',git_url='$git_url', password='$password', home='$home', git_url='$git_url' WHERE id='$id'";
 $stmt=$pdo->prepare($sql);
 $stmt->execute();
 ?>
