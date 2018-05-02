@@ -23,6 +23,10 @@ include_once "./head.php";
                 <dd><input type="text" id="name" name="name"></dd>
             </dl>
             <dl class="item_info">
+                <dt><label for="aname">별칭</label></dt>
+                <dd><input type="text" id="aname" name="aname""></dd>
+            </dl>
+            <dl class="item_info">
                 <dt><label for="home">HOME</label></dt>
                 <dd><input type="text" id="home" name="home""></dd>
             </dl>

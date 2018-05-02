@@ -8,7 +8,7 @@
                 ?>
                 <li><a href="./logout.php" ">로그아웃 |</a></li>
                 <li><a href=""><?=$_SESSION['name']?>님로그인 하였습니다.</a></li>
-                <li><a href="./mypage.php">마이페이지</a></li>
+                <li><a href="./git_up.php?id=<?=$_SESSION['id']?>">마이페이지</a></li>
                 <?php
             }else {
                 ?>

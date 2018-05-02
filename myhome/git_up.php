@@ -8,8 +8,8 @@ include_once "./head.php";
     <?php
     include_once "./header.php";
     include_once "./db/db.php";
-    $idx=$_POST['idx'];
-    $sql="select * from git WHERE idx='$idx'";
+    $id=$_GET['id'];
+    $sql="select * from git WHERE id='$id'";
     $stmt=$pdo->prepare($sql);
     $stmt->execute();
     $rows=$stmt->fetchAll();
@@ -24,10 +24,15 @@ include_once "./head.php";
             <dl class="item_info">
                 <dt><label for="id">id</label></dt>
                 <dd><span><?=$result['id']?></span></dd>
+                <input type="hidden" name='id' value=<?=$result['id']?>>
             </dl>
             <dl class="item_info">
                 <dt><label for="name">이름</label></dt>
                 <dd><input type="text" id="name" name="name" value=<?=$result['name']?>></dd>
+            </dl>
+            <dl class="item_info">
+                <dt><label for="aname">별칭</label></dt>
+                <dd><input type="text" id="aname" name="aname"></dd>
             </dl>
             <dl class="item_info">
                 <dt><label for="password">비밀번호</label></dt>
